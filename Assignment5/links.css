@@ -1,0 +1,8 @@
+body{background-color:slategray; text-align:center;}
+ul{ list-style-type:none; padding:5px;}
+li{ padding:5px; }
+a {text-decoration: none; font-weight:bold;}
+a:link { color:black; }
+a:visited { color:lightgrey; }
+a:hover { color:white; }
+h1{background-color:lightslategray; color:white; padding:20px;}
