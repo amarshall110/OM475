@@ -3,7 +3,8 @@ body {
   }
   header {
     height:150px;
-    background-color:white;
+    background-image:url("images/headerbg.png");
+    background-repeat: none;
 
   }
   aside {
