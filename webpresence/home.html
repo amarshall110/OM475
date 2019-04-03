@@ -4,6 +4,16 @@
 <title>Welcome</title>
 <meta charset="utf-8">
 <style>
+  body {
+    background-color: lightgray
+  }
+  aside {
+    float: right;
+    width: 30%; 
+  }
+
+  #wrapper {margin: 0 auto; width: 90%; background-color:#FFFFFF;  max-width: 1200px;}
+  
   .navbar {
     overflow: hidden;
     background-color: #333;
@@ -64,10 +74,23 @@
   .active {
     background-color:#555555
     }
+  .flex-box {
+    display:flex;
+  }
+  .flex-box > div{
+    padding:10px;
+  }
+  footer {
+    text-align:center;
+  }
+  .h3-header {
+    background-color:#555555; color: #FFFFFF; padding: 3px; width: 30%;
+  }
   </style>
   </head>
   
   <body>
+  <div id="wrapper">
   <header role="banner">
    <h1>Home</h1> 
   </header>
@@ -90,34 +113,28 @@
     <a href="otherprojects.html">Other Projects</a>
     <a href="contact.html">Contact</a>
   </div>
-  
-  
-  
+  <div class="flex-box">
+
+    <div>
+        <h3 class="h3-header">Testing</h3>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing 
+        <br> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+    </div>
+
+    <div style="flex: 0 0 300px">
+        <h3 class="h3-header">Testing</h3>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+    </div>
+
+
+   
+
+</div>
+</div> 
+<footer> Testing testing testing </footer>
   </body>
   </html>
-<div id="container">
-   
-    <nav role="navigation">
-    <ul>
-      <li></li>
-      <li></li>
- 
-      <li><a href="home.html">Home</a></li>
 
-
-
-
-
-
-      
-     </ul>
-   </nav>
-   <aside>
-    </aside>
-    <main>
-      <h2></h2>
-      <footer> </footer>
-    </main>
-</div> 
+    
   </body>
   </html>
