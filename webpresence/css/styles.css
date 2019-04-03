@@ -92,11 +92,34 @@ body {
     background-color:#555555; 
     color: #FFFFFF; 
     padding: 3px; 
-    width: 30%;
+    width: 40%;
   }
   .news-div {
     flex: 0 0 300px; 
     overflow:auto; 
     height:350px;
     margin-bottom:30px;
+  }
+  .pseudonav {
+    background-color: whitesmoke; 
+    flex: 0 0 150px;
+  }
+  li a {
+      text-decoration:none; 
+      font-weight:bold;
+  }
+  li a:link { 
+      color:black; 
+    }
+  li a:visited {
+    color:slategray; 
+}
+  li a:hover { 
+    color:darkgrey; 
+}
+  li {
+      padding-bottom: 20px;
+  }
+  ul {
+      list-style-type: none; margin:20px; padding-left:0px; 
   }
