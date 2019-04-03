@@ -1,12 +1,16 @@
 body {
-    background-color: lightgray
+    background-color: lightgray;
+    margin:0px;
   }
   header {
     height:150px;
     background-image:url("../images/headerbg.png");
     background-repeat: no-repeat;
-    background-position:fixed;
+    background-size:100%;
 
+  }
+  header h1 {
+    margin:0px;
   }
   aside {
     float: right;
