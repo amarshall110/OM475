@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Overview</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header role="banner">
+            <h1>Overview</h1> 
+        </header>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="resume.html">Resume</a>
+          <div class="dropdown" style="background-color:#555555">
+            <button class="dropbtn">My Time at NIU</button>
+            <div class="dropdown-content">
+              <a href="omytime.html">Overview</a>
+              <a href="classes.html">Classes Taken</a>
+              <a href="majorprojects.html">Major Projects</a>
+              <a href="volunteering.html">Volunteering</a>
+            </div>
+          </div> 
+        <a href="background.html">Background</a>
+        <a href="interests.html">Interests</a>
+        <a href="skills.html">Skills</a>
+         <a href="goals.html">Goals</a>
+         <a href="otherprojects.html">Other Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="flex-box">
+            <div class="pseudonav">
+                    <ul>
+                        <li> <a href="omytime.html">Overview</a></li>
+                        <li> <a href="classes.html">Classes Taken</a></li>
+                        <li><a href="majorprojects.html">Major Projects</a></li>
+                        <li><a href="volunteering.html">Volunteering</a></li>
+                        <li><input type="button" onclick="printDiv('printablearea')" value="Print This Page"></li>
+                    </ul>
+            </div>
+            <div class="divtable" id="printablearea">
+                    <h3 class="h3-header">Classes Taken</h3>
+                   <table border="1" >
+                        <tr>
+                                <th>Semester:</th>
+                                <th>Course Name:</th>
+                                <th>Description:</th>
+                                <th>Projects:</th>
+                             </tr>
+                             <tr>
+                                <th>Spring 2017</th>
+                                <th>Course</th>
+                                <th></th>
+                                <th></th>
+                             </tr>
+                             <tr>
+                               <th>Spring 2017</th>
+                               <th>Course</th>
+                               <th></th>
+                               <th></th>
+                            </tr>
+                            <tr>
+                                <th>Spring 2017</th>
+                                <th>Course</th>
+                               <th></th>
+                               <th></th>
+                            </tr>
+                            <tr>
+                                <th>Spring 2017</th>
+                                <th>Course</th>
+                               <th></th>
+                               <th></th>
+                            </tr>
+                            <tr>
+                               <th>Spring 2017</th>
+                               <th>Course</th>
+                               <th></th>
+                               <th></th>
+                            </tr>
+                    </table> 
+            </div>
+        </div> 
+    <footer> Testing testing testing </footer>
+    </div> 
+ <script>
+ function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+   }
+</script>   
+</body>
+</html>
