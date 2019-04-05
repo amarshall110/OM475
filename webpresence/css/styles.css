@@ -224,7 +224,6 @@ form {
 label { 
     float: left;
      width: 75px; 
-     clear: left;
      text-align: right; 
      vertical-align: middle;
      padding-right: 10px;
@@ -234,6 +233,11 @@ input, textarea {
     margin-top: 10px; 
     display: block;
 } 
+.check {
+    display:inline;
+    margin:0px;
+    padding:0px;
+}
 .contacticon {
     width:50px;
     float: left;

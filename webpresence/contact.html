@@ -63,12 +63,15 @@
                  required="required" placeholder="you@yourdomain.com">
             <label for="myPhone">Phone:</label>
                 <input type="text" name="myPhone" placeholder="000-000-0000">
-            <label for="myCallback">Best Callback Time:</label>
-                    <input type="checkbox" name="Morning" value="yes"> Morning
-                    <input type="checkbox" name="Afternoon" value="yes"> Afternoon
-                    <input type="checkbox" name="Evening" value="yes"> Evening
-            <label for="myComments">Comments:</label>
-                 <textarea name="myComments" rows="2" cols="20" required="required" maxlength="1600"></textarea>
+            <label for="myComments" style="margin-top:10px">Notes:</label>
+                 <textarea name="myNotes" rows="2" cols="20"  maxlength="1600"></textarea>
+            <label for="myCallback" style="margin-top:10px">Best Callback Time:</label>
+            <ul>
+                   <li class="check"> <input type="checkbox" name="Morning" value="yes" class="check"> Morning <br></li>
+                   <li class="check"> <input type="checkbox" name="Afternoon" value="yes" class="check"> Afternoon <br> </li>
+                   <li class="check"><input type="checkbox" name="Evening" value="yes" class="check"> Evening <br></li>
+            </ul>
+
             <input id="mySubmit" type="submit" value="Submit">
 
    </form>
