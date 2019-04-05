@@ -171,14 +171,18 @@ p {
     margin:5px;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 th {
-  border-right: 1px solid black; 
+  border-right: 1px solid #CCC; 
   text-align: left; 
   padding:5px;
 }
 
 td {
-  border-right: 1px solid black; 
+  border-right: 1px solid #CCC; 
   vertical-align:top; 
   padding:5px;
 }
