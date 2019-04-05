@@ -36,7 +36,8 @@
     </div>
   </div>
   <div id="wrapper">
-    <div>
+    <a href="#printbutton">Click here to scroll to the print button</a>
+    <div id="printablearea">
         <h2>Resume Content</h2>
         <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing 
             <br> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
@@ -49,11 +50,21 @@
                         <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing 
                             <br> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
     </div>
+    <input type="button" id="printbutton" onclick="printDiv('printablearea')" value="Print This Page">
   </div>  
          
     
     
     </div> 
+<script>
+        function printDiv(divName) {
+               var printContents = document.getElementById(divName).innerHTML;
+               var originalContents = document.body.innerHTML;
+               document.body.innerHTML = printContents;
+               window.print();
+               document.body.innerHTML = originalContents;
+          }
+</script> 
 </body>
 <footer> Testing testing testing </footer>  
 </html>
