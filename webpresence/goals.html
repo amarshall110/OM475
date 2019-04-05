@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Goals</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/tabbar.css">
+</head>
+  
+<body>
+<div id="hwrapper">
+  <header role="banner">
+   <h1>Goals</h1> 
+  </header>
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <div class="dropdown">
+      <button class="dropbtn">My Time at NIU</button>
+      <div class="dropdown-content">
+        <a href="omytime.html">Overview</a>
+        <a href="classes.html">Classes Taken</a>
+        <a href="majorprojects.html">Major Projects</a>
+        <a href="volunteering.html">Volunteering</a>
+      </div>
+    </div> 
+    <a href="background.html">Background</a>
+    <a href="interests.html">Interests</a>
+    <a href="skills.html">Skills</a>
+    <a href="goals.html" class="active">Goals</a>
+    <a href="otherprojects.html">Other Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+<div id="wrapper">
+<h3 class="h3-header">Testing</h3>
+    <div class="flex-box">
+            <div class="tab">
+                <button class="tablinks" onclick="openYear(event, '1 Year Goals')" id="defaultOpen">1 Year Goals</button>
+                <button class="tablinks" onclick="openYear(event, '5 Year Goals')">5 Year Goals</button>
+                <button class="tablinks" onclick="openYear(event, '10 Year Goals')">10 Year Goals</button>
+            </div>
+            <div id="1 Year Goals" class="tabcontent">
+                <h3>1 Year Goals</h3>
+                <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+            </div>
+              
+            <div id="5 Year Goals" class="tabcontent">
+                <h3>5 Year Goals</h3>
+                <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+            </div>
+              
+            <div id="10 Year Goals" class="tabcontent">
+                <h3>10 Year Goals</h3>
+                <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+            </div>
+        
+
+    <div class="news-div">
+        <h3 class="h3-header">Testing</h3>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+    </div>
+  </div>
+</div>
+<script>
+        function openYear(evt, yearGoal) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(yearGoal).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+</script>
+           
+
+</body>
+<footer> Testing testing testing </footer>
+</html>
