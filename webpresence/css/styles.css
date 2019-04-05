@@ -164,3 +164,10 @@ body {
 p {
     margin:5px;
 }
+
+th {
+  border-right: 1px solid black;
+}
+td {
+  border-right: 1px solid black;
+}
