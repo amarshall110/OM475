@@ -234,3 +234,7 @@ input, textarea {
     margin-top: 10px; 
     display: block;
 } 
+.contacticon {
+    width:50px;
+    float: left;
+}
