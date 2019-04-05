@@ -1,7 +1,10 @@
 body {
     background-color: #FFFFFF;
     margin:0px;
-  }
+    background-image:url("../images/marblebg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    }
 header {
     height:200px;
     background-image:url("../images/headerbg.png");
