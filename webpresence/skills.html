@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Skills</title>
-<meta charset="utf-8">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
         <header role="banner">
             <h1>Skills</h1> 
         </header>
-    <div class="navbar">
+    <div class="navbar" id="myNavbar">
         <a href="home.html">Home</a>
         <a href="resume.html">Resume</a>
           <div class="dropdown">
@@ -28,6 +28,8 @@
          <a href="goals.html">Goals</a>
          <a href="otherprojects.html">Other Projects</a>
         <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#9776;</a>
     </div>
   </div>
   <div id="wrapper">
@@ -59,7 +61,17 @@
             </div>
         </div> 
     </div> 
-  </div>  
+  </div>
+  <footer> Testing testing testing </footer>
+  <script>function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>  
 </body>
-<footer> Testing testing testing </footer>
+
 </html>
