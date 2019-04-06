@@ -13,7 +13,7 @@ header {
     background-size: 100%;
     background-position: center;
   }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     header {height: 30%;}
 }
 footer {
@@ -35,15 +35,30 @@ aside {
     padding: 0px;
     width: 95%; 
     background-color:#FFFFFF;  
-
+    max-width: 1400px;
+    min-width: 750px;
   }
+@media screen and (max-width: 750px) {
+    #wrapper {
+      width:95%;
+      margin: 0 auto; 
+      padding: 0px;
+    }
+}
 #hwrapper {
     margin: 0 auto; 
     padding: 0px;
     width: 100%; 
     background-color:#FFFFFF; 
+    min-width:750px;
   }
-
+@media screen and (max-width: 750px) {
+    #hwrapper {
+      width:100%;
+      margin: 0 auto; 
+      padding: 0px;
+    }
+}
 .navbar .icon{
   display:none;
 } 
@@ -108,7 +123,7 @@ aside {
 .active {
     background-color:#555555
     }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
       .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
       .navbar a.icon {
         float: right;
@@ -116,7 +131,7 @@ aside {
       }
     }
     
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
       .navbar.responsive {position: relative;}
       .navbar.responsive .icon {
         position: absolute;
@@ -154,6 +169,7 @@ aside {
 footer {
     text-align:center;
     padding: 20px;
+    width:100%;
   }
 .h3-header {
     background-color: rgb(63, 56, 10,.6); 
