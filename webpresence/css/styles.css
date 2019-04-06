@@ -3,19 +3,20 @@ body {
     margin:0px;
     background-image:url("../images/marblebg.jpg");
     background-position: center;
+    font-size: 16px;
     }
 header {
     padding-bottom: 10%;
     overflow:hidden;
-    background-image:url("../images/headerbg.png");
-    background-color: rgb(63, 56, 10,.7);
+    background-image:url("../images/bg1.jpg");
+    background-color: rgb(124, 111, 124);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center;
     position: relative;
   }
 footer {
-    background-color: #333;
+    background-color: #131333;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -60,13 +61,13 @@ aside {
 } 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #131333;
   }
   
 .navbar a {
     float: left;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -79,7 +80,7 @@ aside {
   }
   
 .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: white;
@@ -90,7 +91,7 @@ aside {
   }
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:#686868;
+    background-color:#444559;
   }
   
 .dropdown-content {
@@ -117,7 +118,7 @@ aside {
     display: block;
   }
 .active {
-    background-color:#555555
+    background-color:#585972;
     }
 @media screen and (max-width: 750px) {
       .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
@@ -164,25 +165,26 @@ aside {
   }
 footer {
     text-align:center;
+    font-size: 20px;
     padding: 15px;
     width:100%;
   }
 .h3-header {
-    background-color: rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px;
     margin:5px; 
     width: 40%;
   }
 .h3-header2 {
-    background-color:rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px; 
     width: 40%;
     margin-top:15px;
   }
 .h3-header3 {
-    background-color:rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px; 
     width: 314px;
@@ -292,8 +294,9 @@ input, textarea {
     width:50px;
     float: left;
   }
-  .text {
+.text {
     background-color: white;
+    opacity: .9;
     color: black;
     font-size: 7vw; 
     font-weight: bold;
