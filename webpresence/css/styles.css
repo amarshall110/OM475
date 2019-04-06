@@ -5,10 +5,12 @@ body {
     background-position: center;
     }
 header {
-    height:200px;
+    padding-bottom: 8%;
+    overflow:hidden;
     background-image:url("../images/headerbg.png");
+    background-color: rgb(63, 56, 10,.7);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
   }
 footer {
@@ -28,14 +30,13 @@ aside {
 #wrapper {
     margin: 0 auto; 
     padding: 0px;
-    width: 90%; 
+    width: 95%; 
     background-color:#FFFFFF;  
     max-width: 1400px;
-    min-width:800px;
   }
 @media screen and (max-width: 750px) {
     #wrapper {
-      width:95%;
+      width:80%;
       margin: 0 auto; 
       padding: 0px;
     }
@@ -44,10 +45,18 @@ aside {
     margin: 0 auto; 
     padding: 0px;
     width: 100%; 
-    background-color:#FFFFFF;  
-    min-width:800px;
+    background-color:#FFFFFF; 
   }
-  
+@media screen and (max-width: 750px) {
+    #hwrapper {
+      width:100%;
+      margin: 0 auto; 
+      padding: 0px;
+    }
+}
+.navbar .icon{
+  display:none;
+} 
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -124,6 +133,7 @@ aside {
         right: 0;
         top: 0;
       }
+    } 
 .navbar.responsive a {
         float: none;
         display: block;
@@ -136,11 +146,14 @@ aside {
       width: 100%;
       text-align: left;
     }
-}
+
 .flex-box {
     display:flex;
     flex-direction: row;
   }
+@media screen and (max-width: 750px) {
+    .flex-box {flex-direction: column;}
+}
 .flex-box > div{
     padding:10px;
   }
@@ -150,7 +163,7 @@ aside {
   }
 footer {
     text-align:center;
-    padding: 20px;
+    padding: 15px;
     width:100%;
   }
 .h3-header {
