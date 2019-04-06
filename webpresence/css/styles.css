@@ -13,6 +13,9 @@ header {
     background-size: 150%;
     background-position: center;
   }
+@media screen and (max-width: 800px) {
+    header {min-height: 15%;}
+}
 footer {
     background-color: #333;
     color: white;
@@ -30,7 +33,7 @@ aside {
 #wrapper {
     margin: 0 auto; 
     padding: 0px;
-    width: 90%; 
+    width: 95%; 
     background-color:#FFFFFF;  
     max-width: 1400px;
   }
