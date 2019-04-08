@@ -218,10 +218,10 @@ li a:link {
       color:black; 
     }
 li a:visited {
-    color:slategray; 
+    color:rgb(54, 49, 54); 
 }
 li a:hover { 
-    color:darkgrey; 
+    color:rgb(88, 81, 88); 
 }
 
 li {
@@ -329,3 +329,10 @@ input, textarea {
     font-weight: bold;
     
   }
+a.projects{
+    text-decoration:none; 
+    color: rgb(85, 77, 85);
+    padding: 0px 15px 0px;
+    font-weight: bold;
+
+}
