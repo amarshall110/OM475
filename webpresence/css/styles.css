@@ -3,19 +3,20 @@ body {
     margin:0px;
     background-image:url("../images/marblebg.jpg");
     background-position: center;
+    font-size: 18px;
     }
 header {
     padding-bottom: 10%;
     overflow:hidden;
-    background-image:url("../images/headerbg.png");
-    background-color: rgb(63, 56, 10,.7);
+    background-image:url("../images/bg1.jpg");
+    background-color: rgb(124, 111, 124);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-position: center;
     position: relative;
   }
 footer {
-    background-color: #333;
+    background-color: #131333;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -60,13 +61,13 @@ aside {
 } 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #131333;
   }
   
 .navbar a {
     float: left;
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -79,7 +80,7 @@ aside {
   }
   
 .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: white;
@@ -90,7 +91,7 @@ aside {
   }
   
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color:#686868;
+    background-color:#444559;
   }
   
 .dropdown-content {
@@ -117,7 +118,7 @@ aside {
     display: block;
   }
 .active {
-    background-color:#555555
+    background-color:#585972;
     }
 @media screen and (max-width: 750px) {
       .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
@@ -156,33 +157,37 @@ aside {
     .flex-box {flex-direction: column;}
 }
 .flex-box > div{
-    padding:10px;
+  padding: 5px 25px 5px;
   }
 .flex-box2 {
     display:flex;
-    flex-direction: column;
+    flex-direction: column; 
+  }
+.flex-box2 > div{
+    padding: 5px 25px 5px;
   }
 footer {
     text-align:center;
+    font-size: 14px;
     padding: 15px;
     width:100%;
   }
 .h3-header {
-    background-color: rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px;
     margin:5px; 
     width: 40%;
   }
 .h3-header2 {
-    background-color:rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px; 
     width: 40%;
     margin-top:15px;
   }
 .h3-header3 {
-    background-color:rgb(63, 56, 10,.6); 
+    background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
     padding: 3px; 
     width: 314px;
@@ -216,14 +221,14 @@ li a:link {
       color:black; 
     }
 li a:visited {
-    color:slategray; 
+    color:rgb(54, 49, 54); 
 }
 li a:hover { 
-    color:darkgrey; 
+    color:rgb(88, 81, 88); 
 }
 
 li {
-  padding-bottom: 20px;
+  padding: 5px 15px 5px;
   }
 
 ul {
@@ -292,8 +297,9 @@ input, textarea {
     width:50px;
     float: left;
   }
-  .text {
+.text {
     background-color: white;
+    opacity: .9;
     color: black;
     font-size: 7vw; 
     font-weight: bold;
@@ -307,3 +313,57 @@ input, textarea {
     transform: translate(-50%, -50%);
     mix-blend-mode: screen;
   }
+.button {
+    background-color: rgb(124, 111, 124);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .forsubmit {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+  }
+  .coursep {
+    font-weight: bold;
+    
+  }
+a.projects{
+    text-decoration:none; 
+    color: rgb(85, 77, 85);
+    padding: 0px 15px 0px;
+    font-weight: bold;
+
+}
+.third {
+  width:33%;
+}
+.resumeh1 {
+  padding:0; 
+  margin:0;
+  color: rgb(71, 65, 71);
+}
+.resumeh2 {
+  padding:0; 
+  margin:0;
+  text-align: center; 
+  border-top: 2px solid #ccc; 
+  border-bottom: 2px solid #ccc; 
+  color: rgb(71, 65, 71);
+}
+.frag {
+  padding-top:10px;
+}
+.frag a{
+  text-decoration:none; 
+  color: rgb(35, 33, 54);
+  font-weight: bold;
+  padding-left: 15px;
+}
+.half {
+  width:50%;
+}
