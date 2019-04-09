@@ -371,6 +371,12 @@ a.projects{
   border-bottom: 2px solid #ccc; 
   color: rgb(71, 65, 71);
 }
+.tableh3 {
+  padding:0; 
+  margin:0;
+  text-align: center; 
+  color: rgb(71, 65, 71);
+}
 .resumep{
   font-weight: bold;
   color: rgb(71, 65, 71);
@@ -386,4 +392,25 @@ a.projects{
 }
 .half {
   width:50%;
+}
+.images {
+  float: left;
+  overflow: hidden;
+  width: 20%;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+.div1{
+  font-size: 16px;
+  padding: 0px;
+  margin: 0 auto;
+}
+.div2{
+  border-bottom: 2px solid #ccc;
+}
+th.v {
+  border-bottom: 2px solid #ccc;
+  border-collapse: collapse;
+
 }
