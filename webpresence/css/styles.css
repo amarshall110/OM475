@@ -22,9 +22,8 @@ footer {
     margin: 0px;
     text-align: left;
     font-size: 14px;
-    padding: 10px;
-    padding-right: 30px;
     width:100%;
+    padding: 10px 0px 10px;
   }
 header h1 {
     margin:0px;
@@ -37,7 +36,7 @@ aside {
 #wrapper {
     margin: 0 auto; 
     padding: 0px;
-    width: 95%; 
+    width: 90%; 
     background-color:#FFFFFF;  
     max-width: 1400px;
   }
@@ -160,16 +159,17 @@ aside {
   }
 @media screen and (max-width: 750px) {
     .flex-box {flex-direction: column;}
+    .flex-box > div {margin:0 auto;}
 }
 .flex-box > div{
-  padding: 5px 25px 5px;
+  padding: 5px 20px 5px;
   }
 .flex-box2 {
     display:flex;
     flex-direction: column; 
   }
 .flex-box2 > div{
-    padding: 5px 25px 5px;
+    padding: 5px 20px 5px;
   }
 
 .h3-header {
@@ -310,6 +310,7 @@ input, textarea {
 .contacticon {
     width:50px;
     float: left;
+    padding: 10px;
   }
 .text {
     background-color: white;
@@ -425,4 +426,18 @@ a.plink:hover{
 }
 p.v {
   padding-top: 2%;
+}
+p.c {
+  padding-top: 1%;
+}
+table.contact {
+  margin: 0 auto;
+}
+th.contact{
+  text-align: center;
+  border:none;
+}
+td.contact{
+  text-align: center;
+  border:none;
 }
