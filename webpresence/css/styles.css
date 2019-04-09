@@ -20,6 +20,11 @@ footer {
     color: white;
     padding: 0px;
     margin: 0px;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+    padding-right: 30px;
+    width:100%;
   }
 header h1 {
     margin:0px;
@@ -166,12 +171,7 @@ aside {
 .flex-box2 > div{
     padding: 5px 25px 5px;
   }
-footer {
-    text-align:center;
-    font-size: 14px;
-    padding: 15px;
-    width:100%;
-  }
+
 .h3-header {
     background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
@@ -397,6 +397,7 @@ a.projects{
   float: left;
   overflow: hidden;
   width: 20%;
+  min-width: 150px;
   padding-right: 10px;
   padding-top: 10px;
   margin: 0 auto;
@@ -413,4 +414,15 @@ th.v {
   border-bottom: 2px solid #ccc;
   border-collapse: collapse;
 
+}
+a.plink{
+  text-decoration:none;
+  color:rgb(85, 77, 85);
+  font-weight: bold;
+}
+a.plink:hover{
+  color: rgb(35, 33, 54);
+}
+p.v {
+  padding-top: 2%;
 }
