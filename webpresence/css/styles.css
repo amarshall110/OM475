@@ -8,7 +8,7 @@ body {
 header {
     padding-bottom: 10%;
     overflow:hidden;
-    background-image:url("../images/bg1.jpg");
+    background-image:url("../images/bg12.jpg");
     background-color: rgb(124, 111, 124);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -249,7 +249,14 @@ p {
 table {
     border-collapse: collapse;
 }
-
+table a{
+  text-decoration:none;
+  color:rgb(85, 77, 85);
+  font-weight: bold;
+}
+table a:hover{
+  color:rgb(43, 38, 43);
+}
 th {
   border-right: 1px solid #CCC; 
   text-align: left; 
