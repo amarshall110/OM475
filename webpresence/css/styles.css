@@ -179,6 +179,13 @@ footer {
     margin:5px; 
     width: 40%;
   }
+.h3-headerlg {
+    background-color: rgb(124, 111, 124, .8); 
+    color: #FFFFFF; 
+    padding: 3px;
+    margin:5px; 
+    width: 90%;
+  }
 .h3-header2 {
     background-color: rgb(124, 111, 124, .8); 
     color: #FFFFFF; 
