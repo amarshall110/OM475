@@ -164,7 +164,7 @@ aside {
 }
 .flex-box > div{
   padding: 5px 20px 5px;
-  min-width: 20%;
+  min-width: 30%;
   }
 .flex-box2 {
     display:flex;
@@ -172,7 +172,7 @@ aside {
   }
 .flex-box2 > div{
     padding: 5px 20px 5px;
-    min-width: 20%;
+    min-width: 30%;
   }
 
 .h3-header {
@@ -436,6 +436,9 @@ p.v {
 p.c {
   padding-top: 1%;
 }
+p.l {
+  padding-top: 5%;
+}
 table.contact {
   margin: 0 auto;
 }
@@ -446,4 +449,13 @@ th.contact{
 td.contact{
   text-align: center;
   border:none;
+}
+.schoollogo {
+  float: left;
+  overflow: hidden;
+  width: 15%;
+  min-width: 90px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin: 0 auto;
 }
