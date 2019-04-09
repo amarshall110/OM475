@@ -232,6 +232,12 @@ div.school {
     flex: 0 0 300px;
     margin:10px 0px 20px;
   }
+.sidebar2 {
+    flex: 0 0 250px;
+    margin:10px 0px 20px;
+    overflow: auto;
+    height: 400px;
+  }
 .pseudonav {
     background-color: whitesmoke; 
     flex: 0 0 200px;
@@ -473,4 +479,7 @@ td.contact{
 caption {
   font-weight: bold;
   font-size: 18px;
+}
+.gallery{
+  background-color:rgb(49, 47, 49);
 }
