@@ -230,7 +230,7 @@ div.school {
   }
 .sidebar {
     flex: 0 0 300px;
-    margin-bottom:30px;
+    margin:10px 0px 20px;
   }
 .pseudonav {
     background-color: whitesmoke; 
