@@ -40,7 +40,7 @@ aside {
     background-color:#FFFFFF;  
     max-width: 1400px;
   }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     #wrapper {
       width:80%;
       margin: 0 auto; 
@@ -53,7 +53,7 @@ aside {
     width: 100%; 
     background-color:#FFFFFF; 
   }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     #hwrapper {
       width:100%;
       margin: 0 auto; 
@@ -124,7 +124,7 @@ aside {
 .active {
     background-color:#585972;
     }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
       .navbar a:not(:first-child), .dropdown .dropbtn {display: none;}
       .navbar a.icon {
         float: right;
@@ -132,7 +132,7 @@ aside {
       }
     }
     
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
       .navbar.responsive {position: relative;}
       .navbar.responsive .icon {
         position: absolute;
@@ -157,12 +157,13 @@ aside {
     display:flex;
     flex-direction: row;
   }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .flex-box {flex-direction: column;}
     .flex-box > div {margin:0 auto;}
 }
 .flex-box > div{
   padding: 5px 20px 5px;
+  min-width: 20%;
   }
 .flex-box2 {
     display:flex;
@@ -170,6 +171,7 @@ aside {
   }
 .flex-box2 > div{
     padding: 5px 20px 5px;
+    min-width: 20%;
   }
 
 .h3-header {
@@ -205,6 +207,9 @@ aside {
     overflow:auto;
     height:350px;
     margin-bottom:30px;
+  }
+.side {
+    margin-bottom:20px;
   }
 .formside {
     flex: 0 0 350px; 
