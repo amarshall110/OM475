@@ -39,34 +39,82 @@
   <div class="flex-box">
 
     <div>
-        <h3 class="h3-header">Testing</h3>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testqing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing 
-        <br> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <h3 class="h3-header">About Me</h3>
+        <img src="images/me.jpg" alt="Photo of Me" class="images"> 
+        <p class="v">Welcome visitors. My name is Allison Marshall, and I created this site to serve as my online portfolio and resume, which captures the last ten years of academics, personal hobbies, and more. I am currently a Senior Operations Management and Information Systems major in my final semester at Northern Illinois University. I work as a Support Engineer for SAP America as part of an internship program, which has opened up many opportunities for me to learn and grow as a student and a professional. </p>
+        <p>I am still actively seeking a full-time role post graduation, so if you are interested in learning anything about me, please take the time to review this site and get in contact with me.</p>
     </div>
 
     <div class="news-div">
-        <h3 class="h3-header">Testing</h3>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
-        <p> testing testing  testing testing  testing testing  testing testing  testing testing  testing testing </p>
+        <h3 class="h3-header">News</h3>
+        <p> I received a notificaiton at the end of spring break that I won an <span id="dots">...</span><span id="more"> Outstanding Woman Student Award at Northern Illinois University. I will be attending the awards banquet on Sunday, April 14. I was nominated for this award by a prior Professor.</span>
+        <button onclick="myFunction1()" id="myBtn" class="button2">Read more</button>
+        </p>
+        <p> Graduation is right around the corner! I have been working to<span id="dots">...</span><span id="more2"> prepare myself for the post-graduation life. Tickets become available in the middle of April, so my peers and I are already speading the word to our family and friends on the tickets.</span>
+        <button onclick="myFunction2()" id="myBtn" class="button2">Read more</button>
+        </p>
+        <p> Last semester, I got the opportunity to attend the<span id="dots">...</span><span id="more3"> Beta Gamma Sigma Leadership Summit as a representative from NIU. I was able to spend four days networking with peers, employers, and wonderful leaders and have an open discussion about Leadership and Innovation.</span>
+          <button onclick="myFunction3()" id="myBtn" class="button2">Read more</button>
+        </p>
     </div>
 
 
    
   </div>
 </div> 
-<footer> Testing testing testing </footer>
-<script>function myFunction() {
+<footer> Web Page Created: April 2019 for OMIS 472 </footer> 
+<script>
+function myFunction() {
   var x = document.getElementById("myNavbar");
   if (x.className === "navbar") {
     x.className += " responsive";
   } else {
     x.className = "navbar";
+  }
+}
+function myFunction1() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunction2() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function myFunction3() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
   }
 }
 </script>

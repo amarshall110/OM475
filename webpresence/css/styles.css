@@ -269,10 +269,14 @@ ul {
 .divtable {
     overflow-x:auto;
     margin-right:20px;
+    padding:10px;
 }
+.divtable tr:nth-child(even){
+  background-color: #dad8d8;}
 
 p {
-    margin:5px;
+    margin:0px 0px 5px;
+    padding: 5px 0px 5px;
 }
 
 table {
@@ -289,13 +293,13 @@ table a:hover{
 th {
   border-right: 1px solid #CCC; 
   text-align: left; 
-  padding:5px;
+  padding:7px;
 }
 
 td {
   border-right: 1px solid #CCC; 
-  vertical-align:top; 
-  padding:5px;
+  vertical-align:center; 
+  padding:7px;
 }
 li.list {
     padding:3px;
@@ -360,6 +364,16 @@ input, textarea {
     display: inline-block;
     font-size: 16px;
   }
+  .button2 {
+    background-color: rgb(218, 206, 218);
+    border: none;
+    color: rgb(36, 29, 35);
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
   .forsubmit {
     margin:0px;
     padding:0px;
@@ -367,6 +381,8 @@ input, textarea {
   }
   .coursep {
     font-weight: bold;
+    padding: 0px;
+    margin: 0px;
     
   }
 a.projects{
@@ -483,3 +499,7 @@ caption {
 .gallery{
   background-color:rgb(49, 47, 49);
 }
+h3{
+  margin:0;
+}
+#more, #more2, #more3 {display: none;}
