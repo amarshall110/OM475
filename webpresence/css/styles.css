@@ -265,10 +265,12 @@ ul {
   margin-top:10px; 
   padding-left:0px; 
   }
-
+.divtab{
+  max-width: 70%;
+}
 .divtable {
-    overflow-x:auto;
-    margin-right:20px;
+    overflow-x:scroll;
+    margin:10px;
     padding:10px;
 }
 .divtable tr:nth-child(even){
