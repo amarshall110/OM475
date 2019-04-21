@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" href="icons/favicon.png" sizes="16x16" />
+</head>
+<body>
+    <div class="flex-box">
+            <div class="navbar" id="myNavbar">
+                <a href="home.html" class="active">Home</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Services</button>
+                      <div class="dropdown-content">
+                        <a href="residential.html">Residential</a>
+                        <a href="commercial.html">Commercial</a>
+                        <a href="industrial.html">Industrial</a>
+                        <a href="fleet.html">Fleet</a>
+                    </div>
+                </div> 
+                <a href="gallery.html">Gallery</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="about.html">About PWE</a>
+                <a href="contact.html">Contact</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        &#9776;</a>
+                
+            </div>
+            <div>
+                <p>This will be social media icons</p>
+            </div>
+    </div>
+    <div>
+         <div style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)">
+                    <img class="mySlides" src="images/banner1.jpg" style="width:100%">
+                    <img class="mySlides" src="images/banner2.jpg" style="width:100%">
+                    <img class="mySlides" src="images/banner3.jpg" style="width:100%">
+                    <div style="width:40%; text-align: center; position:absolute; left:50%; top:50%; background-color: rgba(82,105,131,.7); color:white; "> 
+                            <h1>Pressure WashEx</h1>
+                            <p> Put  |  Links  |  Here</p>
+                    </div>
+         </div>
+         <div class="flex-box" style="height:300px; text-align:center;">
+            <div style="width:20%;; padding-top:3%;">
+                <img src="images/male.png" style="width:70%">
+            </div>
+            <div style="width:20%; padding-top:3%;">
+                    <img src="images/male.png" style="width:70%">
+            </div>
+            <div style="width:20%; padding-top:3%;">
+                    <img src="images/male.png" style="width:70%">
+            </div>
+             <div style="width:20%; padding-top:3%;">
+                    <img src="images/male.png" style="width:70%">
+            </div>
+         </div>
+        <div style="background-color:#2B76CC; color:white; width:100%; min-height: 200px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+            <div class="flex-box">
+            <div style="width:50%; padding-top:10px">
+            <p>test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
+          </div>
+          <div style="width:50%; padding-top:10px">
+                <div style="height:300px; overflow:auto;">
+                <a class="twitter-timeline" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                 </div>
+              </div>
+            </div>  
+    </div>
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myNavbar");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+            function myFunction1() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            function myFunction2() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more2");
+              var btnText = document.getElementById("myBtn2");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            function myFunction3() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more3");
+              var btnText = document.getElementById("myBtn3");
+            
+              if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more"; 
+                moreText.style.display = "none";
+              } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less"; 
+                moreText.style.display = "inline";
+              }
+            }
+            var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+            </script>
+</body>
