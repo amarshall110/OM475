@@ -16,13 +16,14 @@ header {
     position: relative;
   }
 footer {
-    background-color: #131333;
+    background-color: #1B4A80;
     color: white;
     padding: 0px;
     margin: 0px;
     text-align: left;
     font-size: 14px;
     width:100%;
+    min-height:200px;
     padding: 10px 0px 10px;
   }
 header h1 {
@@ -131,7 +132,10 @@ aside {
       width: 100%;
       text-align: left;
     }
-
+.titlelink a {
+  text-decoration:none;
+  color: white;
+}
 .flex-box {
     display:flex;
     flex-direction: row;
