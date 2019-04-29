@@ -295,13 +295,19 @@ label {
      vertical-align: middle;
      padding-right: 10px;
      padding-top: 10px;
+     overflow:auto;
     }
 input, textarea { 
-    margin-top: 10px; 
-    display: block;
+
 } 
+.maintext{
+  margin-top: 10px; 
+  display: block;
+  width:60%;
+}
 .check {
     display:inline;
+    overflow:auto;
     margin:0px;
     padding:0px;
 }
