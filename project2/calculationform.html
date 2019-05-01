@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Calculations</title>
+    <script type="text/javascript" src="js/formcalculations.js"></script>
+    <link href="" rel="stylesheet" type="text/css" />
+</head>
+<body onload='hideTotal()'>
+    <div id="wrap">
+        <form action="" id="serviceform" onsubmit="return false;">
+        <div>
+            <div >
+               <fieldset>
+                <legend>Get an Estimate</legend>
+                <label>Enter Total SquareFeet</label><input type="text" name="numberofsqft" id="numberofsqft" onsubmit="calculateTotal()"><br>
+                <label >Choose Basic Service Type</label> <br>
+                <label class='radiolabel'><input type="radio"  name="selectedservice" value="SWashHose" onclick="calculateTotal()" />Standard Wash with Hose</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedservice" value="DWashHose" onclick="calculateTotal()" />Deluxe Wash with Hose</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedservice" value="SWashXBrush" onclick="calculateTotal()" />Standard Wash with Polishing Brush</label><br/>
+                <label class='radiolabel'><input type="radio"  name="selectedservice" value="DWashXBrush" onclick="calculateTotal()" />Deluxe Wash with Polishing Brush</label><br/>
+                <br>
+               <label >Select Soil Level</label>
+               <select id="dirt" name='dirt' onchange="calculateTotal()">
+                    <option value="Default">Soil Level</option>
+                    <option value="ExDirt">Extremely Dirty</option>
+                    <option value="Dirty">Dirty</option>
+                    <option value="Mild">Mild</option>
+                    <option value="TouchUp">In Need of a Touch-Up</option>
+                </select>
+                <br/>
+                <p>
+                <label for='environmental' class="inlinelabel">Use Environmentally Friendly Chemicals</label>
+               <input type="checkbox" id="environmental" name='environmental' onclick="calculateTotal()" />
+               </p>
+               <p>
+                    <label for='sealant' class="inlinelabel">Use Sealant after Wash</label>
+                   <input type="checkbox" id="sealant" name='sealant' onclick="calculateTotal()" />
+                   </p>
+                   <label >Add-On Services</label>
+         
+                   <select id="extras" name='extras' onchange="calculateTotal()">
+                   <option value="None">Select Extras</option>
+                   <option value="SGraffiti">Small Graffiti Removal</option>
+                   <option value="LGraffiti">Large Graffiti Removal</option>
+                   <option value="Gum">Parking Lot Gum Removal</option>
+                  </select>
+                <div id="totalPrice"></div>
+                
+                </fieldset>
+            </div>
+
+            <input type='submit' id='submit' value='Submit' onclick="calculateTotal()" />
+        </div>  
+       </form>
+	</div>
+
+</body>
+</html>

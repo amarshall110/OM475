@@ -305,29 +305,46 @@ ul.list {
     margin:0px;
 }
 form { 
-    background-color:white;
-    color: #131333;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:1em;
     padding: 10px;
     margin: 5px;
+    border: 1px  solid white;
      }
 label { 
-    float: left;
-     width: 75px; 
      text-align: right; 
      vertical-align: middle;
-     padding-right: 10px;
-     padding-top: 10px;
+     padding: 0px ;
      overflow:auto;
+     font-size: inherit;
     }
+select{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  font-size: inherit;
+  margin:10px;
+}
 input, textarea { 
-
+  padding: 0px ;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
 } 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 1px solid #1B4A80;
+  background-color: rgba(255, 255, 255, .9)
+}
+::placeholder{
+  color:#1a1a22;
+  opacity:.8;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .maintext{
-  margin-top: 10px; 
   display: block;
-  width:60%;
+  width:100%;
+  height:30px;
 }
 .check {
     display:inline;
@@ -356,7 +373,7 @@ input, textarea {
     mix-blend-mode: screen;
   }
 .button {
-    background-color: rgb(124, 111, 124);
+    background-color:#1B4A80;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -364,19 +381,12 @@ input, textarea {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 4px;
   }
-  .button2 {
-    background-color: rgb(218, 206, 218);
-    border: none;
-    color: rgb(36, 29, 35);
-    padding: 5px 5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
+
   .forsubmit {
     margin:0px;
+    margin-top:5px;
     padding:0px;
     text-align:center;
   }
@@ -496,10 +506,15 @@ caption {
   font-weight: bold;
   font-size: 18px;
 }
-.gallery{
-  background-color:rgb(49, 47, 49);
-}
+
 h3{
   margin:0;
 }
-#more, #more2, #more3 {display: none;}
+.totalprice{
+  padding:10px;
+  background-color: rgba(255, 255, 255, .3)
+}
+.imghov:hover {
+  opacity:.2;
+
+}
