@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="Gallery">
+    <div class="numbertext">1 / </div>
+    <img src="images/30629404_10210912435559165_6042437669772671592_n.jpg" style="width:100%">
+  </div>
+
+  <div class="Gallery">
+    <div class="numbertext">2 / </div>
+    <img src="images/31949266_10211057475825081_2504864840158281728_n.jpg" style="width:100%">
+  </div>
+
+  <div class="Gallery">
+    <div class="numbertext">3 / </div>
+    <img src="images/31957744_10211057475065062_7004304465285087232_n.jpg" style="width:100%">
+  </div>
+    
+  <div class="Gallery">
+    <div class="numbertext">4 / </div>
+    <img src="images/33298580_10211154616653541_1845840939386404864_n.jpg" style="width:100%">
+  </div>
+
+  <div class="Gallery">
+    <div class="numbertext">5 / </div>
+    <img src="images/35524043_10211289408503253_3797074135629168640_n.jpg" style="width:100%">
+  </div>
+    
+  <div class="Gallery">
+    <div class="numbertext">6 / </div>
+    <img src="images/58374537_10213147276188784_771914869879341056_n.jpg" style="width:100%">
+  </div>
+    
+  <div class="Gallery">
+        <div class="numbertext">7 / </div>
+        <img src="images/20160827_121703.jpg" style="width:100%">
+      </div>
+        
+    <div class="Gallery">
+        <div class="numbertext">8 / </div>
+        <img src="images/20160913_081503.jpg" style="width:100%">
+    </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div>
+      <h1>Commercial</h1>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/30629404_10210912435559165_6042437669772671592_n.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/31949266_10211057475825081_2504864840158281728_n.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/31957744_10211057475065062_7004304465285087232_n.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/33298580_10211154616653541_1845840939386404864_n.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+  <div>
+        <h1>Residential</h1>
+    </div>
+  <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/35524043_10211289408503253_3797074135629168640_n.jpg" style="width:100%" onclick="currentSlide(5)" alt="The Woods">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/58374537_10213147276188784_771914869879341056_n.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cinque Terre">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/20160827_121703.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/20160913_081503.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+        </div>
+</div>
+<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("Gallery");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+            
+</body>

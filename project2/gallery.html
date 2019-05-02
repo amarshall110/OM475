@@ -4,6 +4,7 @@
 <title>Welcome</title>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/mainstyles.css">
+<link rel="stylesheet" href="css/gallery.css">
 <link rel="icon" type="image/png" href="icons/favicon.png" sizes="16x16" />
 </head>
 <body>
@@ -45,33 +46,87 @@
     </div>
     <div>
          <div style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)">
-          <!-- The expanding image container -->
-          <div class="container">
-            <!-- Close the image -->
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-          
-            <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
-          
-            <!-- Image text -->
-            <div id="imgtext"></div>
-          </div>
-
-          <div class="row">
-            <div class="column">
-              <img src="images/20160827_121703.jpg" alt="Nature" onclick="Gallery(this);">
+            <div class="container">
+                <div class="Gallery">
+                  <div class="numbertext">1 / </div>
+                  <img src="images/30629404_10210912435559165_6042437669772671592_n.jpg" style="width:100%">
+                </div>
+              
+                <div class="Gallery">
+                  <div class="numbertext">2 / </div>
+                  <img src="images/31949266_10211057475825081_2504864840158281728_n.jpg" style="width:100%">
+                </div>
+              
+                <div class="Gallery">
+                  <div class="numbertext">3 / </div>
+                  <img src="images/31957744_10211057475065062_7004304465285087232_n.jpg" style="width:100%">
+                </div>
+                  
+                <div class="Gallery">
+                  <div class="numbertext">4 / </div>
+                  <img src="images/33298580_10211154616653541_1845840939386404864_n.jpg" style="width:100%">
+                </div>
+              
+                <div class="Gallery">
+                  <div class="numbertext">5 / </div>
+                  <img src="images/35524043_10211289408503253_3797074135629168640_n.jpg" style="width:100%">
+                </div>
+                  
+                <div class="Gallery">
+                  <div class="numbertext">6 / </div>
+                  <img src="images/58374537_10213147276188784_771914869879341056_n.jpg" style="width:100%">
+                </div>
+                  
+                <div class="Gallery">
+                      <div class="numbertext">7 / </div>
+                      <img src="images/20160827_121703.jpg" style="width:100%">
+                    </div>
+                      
+                  <div class="Gallery">
+                      <div class="numbertext">8 / </div>
+                      <img src="images/20160913_081503.jpg" style="width:100%">
+                  </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+                <div>
+                    <h1>Commercial</h1>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="images/30629404_10210912435559165_6042437669772671592_n.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/31949266_10211057475825081_2504864840158281728_n.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/31957744_10211057475065062_7004304465285087232_n.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="images/33298580_10211154616653541_1845840939386404864_n.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                  </div>
+                </div>
+                <div>
+                      <h1>Residential</h1>
+                  </div>
+                <div class="row">
+                      <div class="column">
+                        <img class="demo cursor" src="images/35524043_10211289408503253_3797074135629168640_n.jpg" style="width:100%" onclick="currentSlide(5)" alt="The Woods">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/58374537_10213147276188784_771914869879341056_n.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cinque Terre">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/20160827_121703.jpg" style="width:100%" onclick="currentSlide(7)" alt="Mountains and fjords">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/20160913_081503.jpg" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+                      </div>
+              </div>
             </div>
-            <div class="column">
-              <img src="images/20160827_121707.jpg" alt="Snow" onclick="Gallery(this);">
-            </div>
-            <div class="column">
-              <img src="images/20160827_123745.jpg" alt="Mountains" onclick="Gallery(this);">
-            </div>
-            <div class="column">
-              <img src="images/20160913_081503.jpg" alt="Lights" onclick="Gallery(this);">
-            </div>
-          </div>
-
          </div>
          <div class="flex-box" style="height:300px; text-align:center;">
             <div style="width:20%;; padding-top:3%;">
@@ -132,21 +187,7 @@ function myFunction() {
         } else {
         x.className = "navbar";
               }
-            }
-function Gallery(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
-            
-
+            }          
 var myIndex = 0;
 carousel();
 
@@ -161,5 +202,34 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 3000); // Change image every 2 seconds
 }
-            </script>
+var slideIndex = 1;
+    showSlides(slideIndex);
+
+     function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("Gallery");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+
+</script>
 </body>
