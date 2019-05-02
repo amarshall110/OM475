@@ -178,10 +178,11 @@ aside {
 .flex-box2 {
     display:flex;
     flex-direction: column; 
+    
   }
 .flex-box2 > div{
-    padding: 5px 20px 5px;
-    min-width: 30%;
+    padding: 5px 0px 5px;
+    min-width: 10%;
   }
 .h3-header {
     background-color: rgb(124, 111, 124, .8); 
@@ -358,10 +359,15 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     margin:0px;
     padding:0px;
 }
-.contacticon {
-    width:50px;
-    float: left;
-    padding: 10px;
+.imageicon{
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.imageicon img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
   }
 .text {
     background-color: white;
