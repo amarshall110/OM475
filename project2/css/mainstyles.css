@@ -435,8 +435,16 @@ a.projects{
 }
 .third {
   width:33%;
+  text-align: center;
   margin: 0px;
   padding: 0px;
+}
+.implinks {
+  text-decoration: none;
+  color: white;
+}
+.implinks:hover{
+  color: lightgray;
 }
 .resumeh1 {
   padding:0; 
