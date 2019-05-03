@@ -80,6 +80,7 @@ aside {
   padding-right:5px;
   float: right;
   width: 60%;
+  min-width: 20px;
 }
 .navicons:hover{
   opacity: .8;
@@ -121,7 +122,16 @@ aside {
     font-family: inherit;
     margin: 0;
   }
-  
+.activedropbtn{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:white;
+  padding: 10px 24px ;
+  background-color:#123359;
+  font-family: inherit;
+  margin: 0;
+}  
 .navbar a:hover, .dropdown:hover .dropbtn:hover {
   background-color:#123359;
     color: white;
@@ -568,4 +578,8 @@ h3{
 .imghov:hover {
   opacity:.2;
   position: relative;
+}
+.imgserv {
+  max-width: 300px;
+  width:100%;
 }
