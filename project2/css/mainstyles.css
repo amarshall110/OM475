@@ -24,7 +24,7 @@ footer {
     text-align: left;
     font-size: 14px;
     width:100%;
-    min-height:200px;
+    min-height:100px;
     padding: 10px 0px 10px;
   }
 header h1 {
@@ -70,7 +70,19 @@ aside {
     background-color: #131333;
     text-align:center; 
   }
-
+.icons{
+  padding-top:5px;
+}
+.icons:hover{
+  opacity: .8;
+}
+.navicons{
+  padding:0px;
+  width: 60%;
+}
+.navicons:hover{
+  opacity: .8;
+}
 .navbar .icon{
   display:none;
 } 
@@ -78,7 +90,7 @@ aside {
     overflow: hidden;
     background-color:rgba(27,74,128,1);
     text-align: center;
-    width: 80%;
+    width: 100%;
     padding: 0px;
     margin: 0 auto;
   }
