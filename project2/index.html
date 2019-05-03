@@ -25,21 +25,20 @@
     </div>
     </div>
     <div>            
-      <div class="flex-box" style="float: right;">
-        <div style="padding:0px; margin:0px;">
+      <div class="flex-box" style="justify-content: right; align-items: center;">
+        <div style="padding:0px; padding-left: 15px; margin:0px; width: 25%; float: right;">
                 <img src="icons/blfb.png" class="navicons">
           </div>
-          <div style="padding:0px; margin:0px;">
+          <div style="padding:0px; margin:0px; width: 25%; float: right;">
              <img src="icons/blig.png" class="navicons">
           </div>
-         <div style="padding:0px; margin:0px;">
+         <div style="padding:0px; margin:0px; width: 25%; float: right;">
              <img src="icons/blli.png" class="navicons">
           </div>
-          <div style="padding:0px; margin:0px;">
+          <div style="padding:0px; margin:0px; width: 25%; float: right;">
               <a href="https://twitter.com/PWashex" target="_blank"> <img src="icons/bltwit.png" class="navicons"> </a>
          </div>
     </div>
-
     </div>
   </div>
   </div>
@@ -70,13 +69,7 @@
                     <img class="mySlides" src="images/banner1.jpg" style="width:100%">
                     <img class="mySlides" src="images/banner2.jpg" style="width:100%">
                     <img class="mySlides" src="images/banner3.jpg" style="width:100%">
-                    <div style="width:100%; text-align: center; position:absolute; top:45%; background-color: rgba(27,74,128,.6); color:white; "> 
-                            <h1 style="font-size:6vw; margin:0px; padding:0px;">Pressure WashEx</h1>
-                            <p class="titlelink"><a href="residential.html" >Residential</a>  |  
-                              <a href="commercial.html">Commercial</a>  |  
-                              <a href="industrial.html">Industrial</a>  |  
-                              <a href="fleet.html">Fleet</a></p>
-                    </div>
+
          </div>  
           <div class="flex-box" style="height:300px; text-align:center;  justify-content: center;">
             <div style="width:20%; padding-top:3%; position:relative; text-align:center; color:white;">
@@ -163,52 +156,8 @@
                 x.className = "navbar";
               }
             }
-            function myFunction1() {
-              var dots = document.getElementById("dots");
-              var moreText = document.getElementById("more");
-              var btnText = document.getElementById("myBtn");
-            
-              if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
-                moreText.style.display = "none";
-              } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
-                moreText.style.display = "inline";
-              }
-            }
-            function myFunction2() {
-              var dots = document.getElementById("dots");
-              var moreText = document.getElementById("more2");
-              var btnText = document.getElementById("myBtn2");
-            
-              if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
-                moreText.style.display = "none";
-              } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
-                moreText.style.display = "inline";
-              }
-            }
-            function myFunction3() {
-              var dots = document.getElementById("dots");
-              var moreText = document.getElementById("more3");
-              var btnText = document.getElementById("myBtn3");
-            
-              if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more"; 
-                moreText.style.display = "none";
-              } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less"; 
-                moreText.style.display = "inline";
-              }
-            }
-            var myIndex = 0;
+
+var myIndex = 0;
 carousel();
 
 function carousel() {
