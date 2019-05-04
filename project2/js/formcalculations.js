@@ -85,9 +85,9 @@ function SealantPrice()
 function calculateTotal()
 {
     sqft = document.getElementById('numberofsqft').value;
-    var TotPrice = getSQFTPrice() * sqft + getDirt() * sqft + getExtras() + EnvirPrice() * sqft + SealantPrice() * sqft;
+    var TotPrice = (getSQFTPrice() * sqft + getDirt() * sqft + getExtras() + EnvirPrice() * sqft + SealantPrice() * sqft).toFixed(2);
     
-    //display the result
+  
     var divobj = document.getElementById('totalPrice');
     divobj.style.display='block';
     divobj.innerHTML = "Total Price For Pressure WashEx Services $"+TotPrice;

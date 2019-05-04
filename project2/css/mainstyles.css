@@ -217,7 +217,7 @@ p {
 
 form { 
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(27, 74, 128, 0.3);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:1em;
     padding: 10px;
@@ -363,7 +363,7 @@ h3{
 }
 .totalprice{
   padding:10px;
-  background-color: rgba(255, 255, 255, .2)
+  background-color: rgba(27, 74, 128, .4)
 }
 .imghov:hover {
   opacity:.2;
@@ -372,4 +372,25 @@ h3{
 .imgserv {
   max-width: 300px;
   width:100%;
+}
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color:lightgray;
+  color:black;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: rgb(30, 30, 31);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }
