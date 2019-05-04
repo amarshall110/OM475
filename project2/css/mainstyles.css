@@ -196,6 +196,7 @@ aside {
 .flex-box3 {
     display:flex;
     flex-direction: row;
+    max-height: 200px;
   }
 
 .flex-box2 {
