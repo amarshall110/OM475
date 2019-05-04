@@ -60,6 +60,7 @@ header h1 {
 
 .icons{
   padding-top:5px;
+  width: 90%;
 }
 .icons:hover{
   opacity: .8;
