@@ -9,7 +9,7 @@ img {
 .container {
   position: relative;
   margin: 0 auto;
-  width: 60%;
+  width: 85%;
 }
 
 .Gallery {
@@ -27,7 +27,6 @@ img {
   top: 20%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -50,7 +49,7 @@ img {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  top: 7%;
 }
 
 .caption-container {
