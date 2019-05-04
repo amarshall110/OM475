@@ -30,9 +30,7 @@ footer {
 header h1 {
     margin:0px;
   }
-.checked {
-  color: orange;
-  }
+
 .hline:before, .hline:after{
   background-color: #1B4A80;
   content: "";
@@ -50,10 +48,7 @@ header h1 {
   left: 0.5em;
   margin-right: -50%;
 }
-aside {
-    float: right;
-    width: 30%; 
-  }
+
 
 #wrapper {
     margin: 0 auto; 
@@ -63,13 +58,6 @@ aside {
     max-width: 1400px;
   }
 
-#hwrapper {
-    margin: 0 auto; 
-    padding: 0px;
-    width: 100%; 
-    background-color: #131333;
-    text-align:center; 
-  }
 .icons{
   padding-top:5px;
 }
@@ -111,7 +99,9 @@ aside {
     background-color:rgba(27,74,128,1);
     overflow: hidden;
   }
-
+.checked{
+  color: orange;
+}
 .dropdown .dropbtn {
     font-size: 16px;  
     border: none;
@@ -208,78 +198,6 @@ aside {
     padding: 5px 0px 5px;
     min-width: 10%;
   }
-.h3-header {
-    background-color: rgb(124, 111, 124, .8); 
-    color: #FFFFFF; 
-    padding: 3px;
-    margin:5px; 
-    width: 40%;
-  }
-.h3-headerlg {
-    background-color: rgb(124, 111, 124, .8); 
-    color: #FFFFFF; 
-    padding: 3px;
-    margin:5px; 
-    width: 90%;
-  }
-.h3-header2 {
-    background-color: rgb(124, 111, 124, .8); 
-    color: #FFFFFF; 
-    padding: 3px; 
-    width: 40%;
-    margin-top:15px;
-  }
-.h3-header3 {
-    background-color: rgb(124, 111, 124, .8); 
-    color: #FFFFFF; 
-    padding: 3px; 
-    width: 314px;
-    margin:5px;
-  }
-.news-div {
-    flex: 0 0 250px; 
-    overflow:auto;
-    height:350px;
-    margin-bottom:30px;
-  }
-div.school {
-    flex: 0 0 250px; 
-    margin:5px 0px 20px;
-  }
-.side {
-    margin-bottom:20px;
-  }
-.formside {
-    height:350px;
-    margin-bottom:30px;
-  }
-.sidebar {
-    flex: 0 0 300px;
-    margin:10px 0px 20px;
-  }
-.sidebar2 {
-    flex: 0 0 250px;
-    margin:10px 0px 20px;
-    overflow: auto;
-    height: 400px;
-  }
-.pseudonav {
-    background-color: whitesmoke; 
-    flex: 0 0 200px;
-  }
-li a {
-      text-decoration:none; 
-      font-weight:bold;
-  }
-li a:link { 
-      color:black; 
-    }
-li a:visited {
-    color:rgb(54, 49, 54); 
-}
-li a:hover { 
-    color:rgb(88, 81, 88); 
-}
 
 li {
   padding: 5px 15px 0px;
@@ -290,51 +208,12 @@ ul {
   margin-top:10px; 
   padding-left:0px; 
   }
-.divtab{
-  max-width: 70%;
-}
-.divtable {
-    overflow-x:scroll;
-    margin:10px;
-    padding:10px;
-}
-.divtable tr:nth-child(even){
-  background-color: #dad8d8;}
 
 p {
     margin:0px 0px 5px;
     padding: 5px 0px 5px;
 }
 
-table {
-    border-collapse: collapse;
-}
-table a{
-  text-decoration:none;
-  color:rgb(85, 77, 85);
-  font-weight: bold;
-}
-table a:hover{
-  color:rgb(43, 38, 43);
-}
-th {
-  border-right: 1px solid #CCC; 
-  text-align: left; 
-  padding:7px;
-}
-
-td {
-  border-right: 1px solid #CCC; 
-  vertical-align:center; 
-  padding:7px;
-}
-li.list {
-    padding:3px;
-}
-ul.list {
-    padding:3px;
-    margin:0px;
-}
 form { 
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -444,19 +323,8 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     padding:0px;
     text-align:center;
   }
-  .coursep {
-    font-weight: bold;
-    padding: 0px;
-    margin: 0px;
-    
-  }
-a.projects{
-    text-decoration:none; 
-    color: rgb(85, 77, 85);
-    padding: 0px 15px 0px;
-    font-weight: bold;
 
-}
+
 .third {
   width:33%;
   text-align: center;
@@ -470,38 +338,7 @@ a.projects{
 .implinks:hover{
   color: lightgray;
 }
-.resumeh1 {
-  padding:0; 
-  margin:0;
-  color: rgb(71, 65, 71);
-}
-.resumeh2 {
-  padding:0; 
-  margin:0;
-  text-align: center; 
-  border-top: 2px solid #ccc; 
-  border-bottom: 2px solid #ccc; 
-  color: rgb(71, 65, 71);
-}
-.tableh3 {
-  padding:0; 
-  margin:0;
-  text-align: center; 
-  color: rgb(71, 65, 71);
-}
-.resumep{
-  font-weight: bold;
-  color: rgb(71, 65, 71);
-}
-.frag {
-  padding-top:10px;
-}
-.frag a{
-  text-decoration:none; 
-  color: rgb(35, 33, 54);
-  font-weight: bold;
-  padding-left: 15px;
-}
+
 .half {
   width:50%;
 }
@@ -514,56 +351,7 @@ a.projects{
   padding-top: 10px;
   margin: 0 auto;
 }
-.div1{
-  font-size: 16px;
-  margin: 0 auto;
-}
-.div2{
-  border-bottom: 2px solid #ccc;
-}
-th.v {
-  border-bottom: 2px solid #ccc;
-  border-collapse: collapse;
 
-}
-a.plink{
-  text-decoration:none;
-  color:rgb(85, 77, 85);
-  font-weight: bold;
-}
-a.plink:hover{
-  color: rgb(35, 33, 54);
-}
-p.v {
-  padding-top: 2%;
-}
-p.c {
-  padding-top: 1%;
-}
-p.l {
-  padding-top: 5%;
-}
-table.contact {
-  overflow: hidden;
-  margin: 0 auto;
-}
-th.contact{
-  text-align: center;
-  border:none;
-}
-td.contact{
-  text-align: center;
-  border:none;
-}
-.schoollogo {
-  float: left;
-  overflow: hidden;
-  width: 15%;
-  min-width: 90px;
-  padding-right: 10px;
-  padding-top: 10px;
-  margin: 0 auto;
-}
 caption {
   font-weight: bold;
   font-size: 18px;
